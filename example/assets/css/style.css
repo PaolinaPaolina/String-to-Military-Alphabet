@@ -1,0 +1,362 @@
+
+/* ==== Scroll down to find where to put your styles :) ==== */
+
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||              ID encode.decode                ||
+   ||                                              ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+body { font: 14px/1.333 sans-serif; color: #444; background: #eee; }
+
+a { color: #980905; }
+a:hover, a:focus, a:active { text-decoration: none; }
+
+h1 { margin: 0 0 0.5em; font-size: 29px; }
+h2 { margin: 0 0 0.75em; font-size: 21px; }
+h3 { margin: 0 0 0.333em; font-size: 16px; font-weight: normal; }
+p { margin: 0 0 1.333em; }
+em { font-style: italic; }
+table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
+th { font-weight: bold; }
+th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
+pre, code { font-family: monospace, sans-serif; font-size: 1em; color:#080; }
+
+.container { position:relative; overflow:hidden; width: 80%; padding: 20px 60px 40px 60px; border: 1px solid #ccc; margin: 0px auto 40px auto; background: #fff; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.1); box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+
+.container pre,
+.container .prettyprint { padding: 0; border: 0; margin: 0 0 20px; font-size: 13px; background: #fff; }
+
+.header { padding-right:80px; }
+
+.section { margin: 40px 0 20px; }
+
+.example { padding: 20px; border: 1px solid #ccc; margin: 10px -20px 20px; }
+
+.footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
+.footer a { color: #666; }
+
+
+
+header{
+    padding: 5px 0;
+    font-size:20px;
+    border:1px solid #76CA43;
+    text-align: center;
+    border-bottom-color: #569D2B;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #76CA43;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#76CA43), to(#569D2B));
+    background-image: -moz-linear-gradient(#76CA43, #569D2B);
+    background-image: -o-linear-gradient(#76CA43, #569D2B);
+    background-image: linear-gradient(#76CA43, #569D2B);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76CA43', endColorstr='#569D2B');
+}
+/** Forms **/
+form {
+    clear: both;
+    margin-right: 20px;
+    padding: 0;
+    width: 95%;
+}
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 16px 20px;
+}
+fieldset legend {
+    background:#fff;
+    color: #e32;
+    font-size: 160%;
+    font-weight: bold;
+}
+fieldset fieldset {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 16px 10px;
+}
+fieldset fieldset legend {
+    font-size: 120%;
+    font-weight: normal;
+}
+fieldset fieldset div {
+    clear: left;
+    margin: 0 20px;
+}
+form div {
+    clear: both;
+    margin-bottom: 1em;
+    padding: .5em;
+    vertical-align: text-top;
+}
+form .input {
+    color: #444;
+}
+form .required {
+    font-weight: bold;
+}
+form .required label:after {
+    color: #e32;
+    content: '*';
+    display:inline;
+}
+form .required p {
+    font-weight:normal;
+    color:#444;
+    margin:0;
+}
+form .required span {
+    font-weight:normal;
+    color:#900;
+}
+form .required .question {
+    font-weight:normal;
+    float:right;
+    text-decoration:none;
+    color:#A8A8A8;
+}
+label {
+    display: block;
+    font-size: 110%;
+    margin-bottom:3px;
+}
+input[type="text"] , textarea {
+    clear: both;
+    font-size: 140%;
+    font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+    padding: 1%;
+    width:98%;
+}
+/*Form errors*/
+#FormErrors{
+    font-size:18px;
+    text-align:center;
+    border-color: #b53f3a;
+    border-bottom-color: #a0302a;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -o-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc5f59', endColorstr='#b33630');
+}
+#FormErrors h1{
+    font-size:35px;
+    font-weight:bold;
+}
+#FormErrors .FormError em{
+    font-size:20px;
+    font-weight:bold;
+}
+/*Help styles*/
+#Help {
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    
+}
+#Help h1{
+    
+}
+
+/* ------------------------------------------
+Git CSS3 Buttons
+------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+.gbutton {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    font: 11px/normal sans-serif;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ececec');
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box; 
+    /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+.gbutton:hover, .gbutton:focus, .gbutton:active , .gbutton.active{
+    border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bdc', endColorstr='#3072b3');
+}
+.gbutton:active {
+    border-color: #2a65a0;
+    border-bottom-color: #3884CF;
+    color: #fff;
+    background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+    background-image: -moz-linear-gradient(#3072b3, #599bdc);
+    background-image: -o-linear-gradient(#3072b3, #599bdc);
+    background-image: linear-gradient(#3072b3, #599bdc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3072b3', endColorstr='#599bdc');
+}
+/* overrides extra padding on button elements in Firefox */
+.gbutton::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+.center{
+text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.jqueryhidden { display: none; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+    /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+        -ms-filter: none !important; } 
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3{ page-break-after: avoid; }
+}

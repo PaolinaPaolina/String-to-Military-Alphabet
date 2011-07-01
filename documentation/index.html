@@ -1,0 +1,159 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>String to Military Alphabet</title>
+	
+	<meta name="description" content="Thank you downloading or forking String to Military Alphabet from Higher Ground Studio. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form. Thanks so much!">
+	<meta name="author" content="Kyle King">
+	<meta name="copyright" content="Kyle King">
+	<meta name="generator" content="Documenter v1.4 http://rxa.li/documenter">
+	<meta name="date" content="2011-06-28T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#description">Description</a></li>
+			<li><a href="#install_and_methods">Install and Methods</a>
+				<ol>
+					<li><a href="#install_and_methods_usage">Usage</a>
+					<li><a href="#install_and_methods_methods">Methods</a>
+					<li><a href="#install_and_methods_parameters">Parameters</a>
+				</ol>
+			</li>
+			<li><a href="#thank_you">Thank You</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Kyle King 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.4</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>String to Military Alphabet</h1><hr><ul><li>Created: 06/03/2011</li><li>latest Update: 06/28/2011</li><li>By: Kyle King</li><li><a href=""></a></li><li>Email: <a href="mailto:&#107;&#121;&#108;&#101;&#46;&#107;&#105;&#110;&#103;&#64;&#104;&#105;&#103;&#104;&#101;&#114;&#103;&#114;&#111;&#117;&#110;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#99;&#111;&#109;">&#107;&#121;&#108;&#101;&#46;&#107;&#105;&#110;&#103;&#64;&#104;&#105;&#103;&#104;&#101;&#114;&#103;&#114;&#111;&#117;&#110;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#99;&#111;&#109;</a></li></ul><p>Thank you for downloading or forking String to Military Alphabet from Higher Ground Studio. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form. Thanks so much!</p></section><section id="description">
+	<h3>Description</h3><hr class="notop">
+<p>
+	String to Military Alphabet makes converting string to military phonetic alphabet code easy!</p>
+<p>
+	Sierra-Tango-Romeo-India-November-Golf-Space-Tango-Oscar-Space-Mike-India-Lima-India-Tango-Alfa-Romeo-Yankee-Space-Alfa-Lima-Papa-Hotel-Alfa-Bravo-Echo-Tango-Space-Mike-Alfa-Kilo-Echo-Sierra-Space-Charlie-Oscar-November-Victor-Echo-Romeo-Tango-India-November-Golf-Space-Sierra-Tango-Romeo-India-November-Golf-Space-Tango-Oscar-Space-Mike-India-Lima-India-Tango-Alfa-Romeo-Yankee-Space-Papa-Hotel-Oscar-November-Echo-Tango-India-Charlie-Space-Alfa-Lima-Papa-Hotel-Alfa-Bravo-Echo-Tango-Space-Charlie-Oscar-Delta-Echo-Space-Echo-Alfa-Sierra-Yankee-ExclamationMark</p>
+</section>
+<section id="install_and_methods">
+	<h3>Install and Methods</h3><hr class="notop">
+<h4 id="install_and_methods_usage">Usage</h4>
+<p>
+	First, include the class in your project.</p>
+<pre class="brush: php">
+&lt;?php 
+require &#39;militaryAlphaClass.php&#39;;
+?&gt;
+</pre>
+<p>
+	Next, create a new instance of the class (you can name it what you wish, just change variable name):</p>
+<pre class="brush: php">
+&lt;?php 
+$mpa = new StringToMilitaryPhonetic();
+?&gt;
+</pre>
+<p>
+	And that&#39;s really it. You now have access to all of the available functions.</p>
+<h4 id="install_and_methods_methods">Methods</h4>
+<p>
+	Below you find a list of methods and how you can use them.</p>
+<h6>
+	Convert</h6>
+<pre class="brush: php">
+&lt;?php
+require &#39;militaryAlphaClass.php&#39;;
+$mpa = new StringToMilitaryPhonetic();
+$converted = $mpa-&gt;convert(&quot;string to convert&quot;);
+?&gt;
+</pre>
+<h4 id="install_and_methods_parameters">Parameters</h4>
+<pre class="brush: php">
+&lt;?php
+require &#39;militaryAlphaClass.php&#39;;
+$mpa = new StringToMilitaryPhonetic();
+//This will not convert numbers or spaces
+$converted = $mpa-&gt;convert(&quot;string to convert&quot;, true, true);
+?&gt;
+</pre>
+<p>
+	Below you find a list of parameters (options) and how you can use them.</p>
+<h6>
+	Convert Numbers</h6>
+<p>
+	Do you NOT want the numbers to be converted (i.e. 4 to Four)? This is defaulted to convert numbers.</p>
+<pre class="brush: php">
+&lt;?php
+require &#39;militaryAlphaClass.php&#39;;
+$mpa = new StringToMilitaryPhonetic();
+//This will not convert number but will convert spaces
+$converted = $mpa-&gt;convert(&quot;string to convert&quot;, true);
+?&gt;
+
+</pre>
+<h6>
+	Convert Spaces</h6>
+<p>
+	Do you NOT want spaces to be converted (i.e. &quot; &quot; to space)? This is defaulted to convert spaces.</p>
+<pre class="brush: php">
+&lt;?php
+require &#39;militaryAlphaClass.php&#39;;
+$mpa = new StringToMilitaryPhonetic();
+//This will convert numbers but not spaces
+$converted = $mpa-&gt;convert(&quot;string to convert&quot;, false, true);
+?&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="thank_you">
+	<h3>Thank You</h3><hr class="notop">
+<p>
+	Once again, thank you so much for forking or downloading String to Military Alphabet. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the php files on CodeCanyon, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<address class="append-bottom alt large">
+	<strong>Kyle King, Higher Ground Studio</strong></address>
+</section>
+
+	</div>
+</body>
+</html>
